@@ -1,4 +1,3 @@
-// src/components/BlogPost.js
 import React from 'react';
 
 function BlogPost({ title, content, image }) {

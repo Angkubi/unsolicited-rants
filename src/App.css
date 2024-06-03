@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 
+.footer {
+  background-color:white;
+  color: darkslategrey;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
 
-/* src/App.css */
 body {
   font-family: 'EB Garamond', serif;
   font-size: 1em;
@@ -11,23 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the body covers the entire viewport */
-}
-
-.header {
-  background-color:white;
-  color: darkslategrey;
-  text-align: left; /* Adjust text alignment to left */
-  padding: 1em 10em; /* Adjust padding on left and right sides */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.2em;
-}
-
-.footer {
-  background-color:white;
-  color: black;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 1.2em;
 }
 
 main {
@@ -50,11 +39,22 @@ main {
 
 }
 
+.blog-post h2 {
+  margin-bottom: 0.2em; 
+}
+
+
+.blog-post p {
+  margin-top: 0.5em; 
+  line-height: 1.6; 
+}
+
+
 .post-image {
   width: 100%;
   height: auto;
   margin: 1em 0;
-  margin-bottom: 0.2em; /* Adjust margin bottom to your desired spacing */
+  margin-bottom: 0.2em; 
 
 }
 
@@ -74,9 +74,12 @@ main {
   }
 }
 
-
-a{
-  color: darkslategrey;
+@media (max-width: 600px) {
+  .header {
+    padding: 1em 1.6em; 
+    font-size: 0.8em; 
+    color: darkslategrey;
+  }
 }
 
 h2{
