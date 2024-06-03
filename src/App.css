@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* src/App.css */
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Ensure the body covers the entire viewport */
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  background-color:white;
+  color: darkslategrey;
+  text-align: left; /* Adjust text alignment to left */
+  padding: 1em 10em; /* Adjust padding on left and right sides */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  background-color:white;
+  color: black;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+main {
+  flex: 1; /* Grow to fill remaining space */
+  padding: 1em;
+  max-width: 65pc;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+}
+
+.blog-post {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 1em;
+
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  margin: 1em 0;
+  margin-bottom: 0.2em; /* Adjust margin bottom to your desired spacing */
+
+}
+
+
+@media (min-width: 600px) {
+  .blog-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
   }
-  to {
-    transform: rotate(360deg);
+
+  .blog-post {
+      flex: 1 0 45%;
+      margin-bottom: 1em;
+      border-bottom: none;
+      padding-bottom: 0;
   }
 }
+
+
+a{
+  color: darkslategrey;
+}
+
+h2{
+  font-family: 'EB Garamond', serif;
+  font-size:1.3em;
+}
+
