@@ -6,7 +6,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
 }
-  
+
 .footer {
     background-color: white;
     color: black;
@@ -15,14 +15,7 @@
     font-size: 1.2em;
 }
   
-main {
-    flex: 1; 
-    padding: 1em;
-    max-width: 65pc;
-    margin: auto;
-    font-size: 1.2em;
-}
-  
+/*??*/
 .blog-list {
     display: grid;
     grid-template-columns: 1fr; 
@@ -36,13 +29,7 @@ main {
     flex-direction: column;
 }
   
-.post-image {
-    width: 100%;
-    height: auto;
-    margin: 1em 0;
-    margin-bottom: 0.2em; 
-  }
-  
+/*idk*/
 @media (min-width: 600px) {
     .blog-list {
         grid-template-columns: 1fr 1fr;

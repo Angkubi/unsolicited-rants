@@ -14,7 +14,6 @@ import img8 from './img/img8.jpg';
 import img9 from './img/img9.jpg';
 import img10 from './img/img10.jpg';
 
-
 function App() {
   const [posts, setPosts] = useState([
     { title: 'First ', content: 'This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.', image: img1 },
@@ -29,7 +28,6 @@ function App() {
     { title: 'Tenth ', content: 'This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.', image: img10 },
   ]);
 
-
   return (
     <div className="app">
       <Header />
@@ -40,6 +38,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

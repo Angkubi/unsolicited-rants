@@ -8,7 +8,12 @@ main {
   margin: auto;
   font-family: 'EB Garamond', serif;
   font-size: 1.2em;
+}
 
+/* title content*/
+body {
+  font-size: 1em;
+  justify-content: center;
 }
 
 .footer {
@@ -18,24 +23,20 @@ main {
   font-family: 'EB Garamond', serif;
 }
 
-/* title content*/
-body {
-  font-size: 1em;
-  justify-content: center;
-}
-
-
+/*divs*/
 .blog-list {
   gap: 5em;
 }
 
+/*mobile*/
 .blog-post {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid darkgrey;
 }
 
 /*title to content spacing*/
 .blog-post h2 {
-  margin-bottom: 0.2em; 
+  font-size:1.4em;
+  margin-bottom: 0.2em;
 }
 
 /*content line spacing */
@@ -44,6 +45,7 @@ body {
   line-height: 1.5; 
 }
 
+/*image spacing*/
 .post-image {
   width: 100%;
   height: auto;
@@ -73,9 +75,3 @@ body {
     color: darkslategrey;
   }
 }
-
-h2{
-  font-family: 'EB Garamond', serif;
-  font-size:1.3em;
-}
-
