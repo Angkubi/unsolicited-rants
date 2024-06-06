@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './bloglist.css';
 
 const BlogList = ({ posts }) => {
@@ -7,7 +8,9 @@ const BlogList = ({ posts }) => {
             {posts.map((post, index) => (
                 <div className="blog-post" key={index}>
                     <img src={post.image} alt={post.title} className="post-image" />
-                    <h2>{post.title}</h2>
+                    <Link to={`/post/${post.id}`} className="post-title-link">
+                        <h2>{post.title}</h2>
+                    </Link>
                     <p>{post.content}</p>
                 </div>
             ))}
