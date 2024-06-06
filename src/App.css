@@ -90,4 +90,9 @@ body {
 
 a {
   color: darkslategrey;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
