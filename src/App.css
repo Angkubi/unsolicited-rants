@@ -17,7 +17,7 @@ body {
 }
 
 .footer {
-  background-color:white;
+  background-color: white;
   color: darkslategrey;
   text-align: center;
   font-family: 'EB Garamond', serif;
@@ -35,7 +35,7 @@ body {
 
 /*title to content spacing*/
 .blog-post h2 {
-  font-size:1.4em;
+  font-size: 1.4em;
   margin-bottom: 0.2em;
 }
 
@@ -45,12 +45,24 @@ body {
   line-height: 1.5; 
 }
 
-/*image spacing*/
+/* dont fucking know*/
 .post-image {
   width: 100%;
   height: auto;
   margin: 1em 0;
   margin-bottom: 0.2em; 
+}
+
+/* Ensure .blog-post-content is centered*/
+.blog-post-content {
+  max-width: 60%;
+  margin: auto;
+}
+
+/*image spacing*/
+.post-image-container {
+  width: 60%;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
@@ -74,4 +86,8 @@ body {
     font-size: 0.8em; 
     color: darkslategrey;
   }
+}
+
+a {
+  color: darkslategrey;
 }
