@@ -11,7 +11,7 @@ const BlogList = ({ posts }) => {
                     <Link to={`/post/${post.id}`} className="post-title-link">
                         <h2>{post.title}</h2>
                     </Link>
-                    <p>{post.description}</p>
+                    <p>{post.desc}</p>
                 </div>
             ))}
         </div>
