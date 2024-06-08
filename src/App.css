@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-/*all under h and f*/
+/* all under h and f */
 main {
   flex: 1; /* Grow to fill remaining space */
   padding: 1em;
@@ -10,7 +10,7 @@ main {
   font-size: 1.2em;
 }
 
-/* title content*/
+/* title content */
 body {
   font-size: 1em;
   justify-content: center;
@@ -23,29 +23,40 @@ body {
   font-family: 'EB Garamond', serif;
 }
 
-/*divs*/
+/* divs */
 .blog-list {
   gap: 4em;
 }
 
-/*mobile*/
+/* mobile */
 .blog-post {
   border-bottom: 2px solid darkgrey;
 }
 
-/*title to content spacing*/
+/* title to content spacing */
 .blog-post h2 {
   font-size: 1.4em;
   margin-bottom: 0.2em;
 }
 
-/*content line spacing */
+/* content line spacing */
 .blog-post p {
   margin-top: 0.5em; 
   line-height: 1.5; 
 }
 
-/* dont fucking know*/
+/* Ensure .blog-post-content is not centered */
+.blog-post-content {
+  padding-left: 20%; 
+  padding-right: 20%;
+}
+
+/* image spacing */
+.post-image-container {
+  width: 60%;
+  margin: auto;
+}
+
 .post-image {
   width: 100%;
   height: auto;
@@ -53,38 +64,44 @@ body {
   margin-bottom: 0.2em; 
 }
 
-/* Ensure .blog-post-content is centered*/
-.blog-post-content {
-  max-width: 60%;
-  margin: auto;
-}
-
-/*image spacing*/
-.post-image-container {
-  width: 60%;
-  margin: auto;
-}
-
 @media (min-width: 600px) {
   .blog-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .blog-post {
-      flex: 1 0 45%;
-      margin-bottom: 1em;
-      border-bottom: none;
-      padding-bottom: 0;
+    flex: 1 0 45%;
+    margin-bottom: 1em;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
 @media (max-width: 600px) {
   .header {
-    padding: 1em 1.6em; 
+    padding: 1em;
     font-size: 0.8em; 
     color: darkslategrey;
+  }
+
+  .blog-post-content {
+    padding-left: 0; 
+    padding-right: 0;
+  }
+
+ 
+  .post-image {
+    width: 100%; /* image fills container width */
+    height: auto;
+    margin: 1em 0;
+  }
+
+  .post-image-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
   }
 }
 

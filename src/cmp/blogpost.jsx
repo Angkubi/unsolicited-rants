@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown'; //using markdown
 
 function BlogPost({ title, content, image }) {
     return (
@@ -10,7 +11,7 @@ function BlogPost({ title, content, image }) {
             )}
             <div className="blog-post-content">
                 <h2>{title}</h2>
-                <p>{content}</p>
+                <ReactMarkdown>{content}</ReactMarkdown>
             </div>
         </article>
     );
