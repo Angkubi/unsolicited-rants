@@ -3,7 +3,7 @@ import images from '../utils/imageloader';
 const post1 = {
   id: 1,
   title: 'Test',
-  description: 'This is a brief description',
+  desc: 'This is a brief description',
   content: `
   This is the first line.
 

@@ -3,8 +3,14 @@ import images from '../utils/imageloader';
 const post4 = {
   id: 4,
   title: 'Fourth',
-  description: 'This is a brief description',
-  content: 'This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.',
+  desc: 'This is a brief description',
+  content:  `
+  This is the first line.
+
+  This is second. This is third. This is fourth.
+  
+  `,
+
   image: images['img4.jpg']
 };
 
