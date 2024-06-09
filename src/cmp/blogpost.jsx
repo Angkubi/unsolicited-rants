@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown'; //using markdown
 
 function BlogPost({ title, content, image }) {
+    useEffect(() => {
+        window.scrollTo({ top: 0 }); // to top without animation
+    }, []); 
+
     return (
         <article className="blog-post">
             {image && (

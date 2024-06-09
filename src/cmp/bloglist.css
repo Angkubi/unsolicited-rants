@@ -40,4 +40,32 @@
     }
 }
   
-  
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.page-link {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.page-link:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.page-link:hover:not(:disabled) {
+    background-color: #ddd;
+}
+
+.page-link.active {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
